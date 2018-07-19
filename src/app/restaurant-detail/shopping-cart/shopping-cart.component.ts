@@ -5,6 +5,7 @@ import { ShoppingCartService } from './shopping-cart.service';
   selector: 'mt-shopping-cart',
   templateUrl: './shopping-cart.component.html'
 })
+
 export class ShoppingCartComponent implements OnInit {
 
   constructor(private shoppingCartService: ShoppingCartService) { }
@@ -17,7 +18,7 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   total(): number {
-    return this.total()
+    return this.shoppingCartService.total()
   }
 
 }

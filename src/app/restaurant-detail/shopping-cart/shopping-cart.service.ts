@@ -23,7 +23,8 @@ export class ShoppingCartService {
     }
 
     total(): number {
-        return this.items.map(item => item.value())
+        return this.items
+            .map(item => item.value())
             .reduce((prev, value) => prev+value, 0)
     }
 }
