@@ -14,11 +14,12 @@ export class ShoppingCartService {
         if (foundItem) {
             foundItem.quantity = foundItem.quantity + 1
         } else {
-            this.items.push(new CartItem(item))
+            let nItem= new CartItem(item)
+            this.items.push(nItem)
         }
     }
 
-    removeitem(item: CartItem) {
+    removeItem(item: CartItem) {
         this.items.splice(this.items.indexOf(item), 1)
     }
 
