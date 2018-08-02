@@ -23,14 +23,14 @@
                     <div class="col-xs-12">
                       <p class="lead">Endereço de Entrega:</p>
                     </div>
-                    <div class="col-sm-6 col-xs-12">
+                    <div class="col-sm-5 col-xs-12">
                       <mt-input-container label="Endereço" errorMessage="Campo obrigatório, com 3 caracteres">
-                        <input class="form-control" name="address" ngModel required minlength="3" placeholder="Endereço">
+                        <input class="form-control" name="address" ngModel required nlength="3" placeholder="Endereço">
                       </mt-input-container>
                     </div>
-                    <div class="col-sm-2 col-xs-6">
-                      <mt-input-container label="Número" errorMessagem="Campo obrigatório">
-                        <input class="form-control" name="number" ngModel required placeholder="Número">
+                    <div class="col-sm-3 col-xs-6">
+                      <mt-input-container label="Número" errorMessage="Campo obrigatório, números ou s/n">
+                        <input class="form-control" name="number" ngModel pattern="(^[0-9]*$)|(s/n)" required placeholder="Número">
                       </mt-input-container>
                     </div>
                     <div class="col-sm-4 col-xs-6">
